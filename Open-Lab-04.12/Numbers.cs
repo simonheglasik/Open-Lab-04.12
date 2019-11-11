@@ -6,7 +6,14 @@ namespace Open_Lab_04._12
     {
         public int MissingNum(int[] nums)
         {
-            throw new NotImplementedException();
+            int a = 0;
+            foreach(int i in nums)
+            {
+                a = a + i;
+            }
+            a = 55 - a;
+            if (a == 0) return 10;
+            return a;
         }
     }
 }
